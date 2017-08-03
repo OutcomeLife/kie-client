@@ -95,13 +95,26 @@
 			<artifactId>vertx-auth-oauth2</artifactId>
 			<version>${version.vertx}</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.bitsofinfo</groupId>
+			<artifactId>hazelcast-docker-swarm-discovery-spi</artifactId>
+			<version>1.0-RC2</version>
+		</dependency>
 	</dependencies>
 	<repositories>
 		<repository>
 			<id>outcomelife</id>
 			<url>https://nexus.outcome-hub.com/nexus/content/repositories/outcomelife</url>
 		</repository>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>bintray</name>
+			<url>http://jcenter.bintray.com</url>
+		</repository>
+
 	</repositories>
 	<build>
 		<plugins>
